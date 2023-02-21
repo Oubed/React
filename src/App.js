@@ -1,6 +1,6 @@
 //importa las librerias
 import { useState } from 'react';
-
+//creamos la funcion Squard
 function Square({ value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
@@ -8,7 +8,7 @@ function Square({ value, onSquareClick }) {
     </button>
   );
 }
-
+//creamos la funcion Board
 function Board({ xIsNext, squares, onPlay }) {
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
@@ -95,6 +95,7 @@ export default function Game() {
   );
 }
 
+//segmento de código que nos ayuda a determinar el ganador
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
