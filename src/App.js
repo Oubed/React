@@ -1,6 +1,6 @@
 //Importamos las librerias.
 import { useState } from 'react';
-//Creamos la funcion Squard.
+//Creamos la funcion Square.
 function Square({ value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
